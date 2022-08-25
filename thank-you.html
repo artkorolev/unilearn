@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Отправка формы на почту </title>
+    <!-- Подключение стилей css -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/error.css">
+   <!-- Подключение стилей dark theme  -->
+   <link rel="stylesheet" href="css/theme.css">
+   <!-- Подключение css animate -->
+   <link rel="stylesheet" href="css/animate.css">
+   <!-- Подключение favicon -->
+   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+   <!-- Подключение jquery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+     <!-- PRELOADER -->
+     <div class="preloader">
+        <div class="preloader_inner"></div>
+     </div>
+
+     <!-- HEADER -->
+     <header class="header">
+        <section class="contacts">
+           <div class="container">
+              <div class="header_contact">
+                 <div class="address">Днепр, ул. Гагарина, 14</div>
+                 <div class="phone"><a href="tel:+380 99 774 7447">+380 99 774 7447</a></div>
+                 <div class="worktime">Пн – Пт 8.00 – 18.00</div>
+                 <div class="social">
+                    <a href="https://web.telegram.org/#/login">
+                       <svg class="social_icon">
+                          <use xlink:href="#telegram"></use>
+                       </svg>
+                    </a>
+                    <a href="https://twitter.com/?lang=ru">
+                       <svg class="social_icon">
+                          <use xlink:href="#twitter"></use>
+                       </svg>
+                    </a>
+                    <a href="https://www.youtube.com/">
+                       <svg class="social_icon">
+                          <use xlink:href="#youtube"></use>
+                       </svg>
+                    </a>
+                    <a href="https://twitter.com/vkontakte?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                       <svg class="social_icon">
+                          <use xlink:href="#vk"></use>
+                       </svg>
+                    </a>
+                 </div>
+
+                 <div class="box_right" >
+                    <div class="header_form">
+                       <form name="form1" class="search_box">
+                          <div class="search_container">
+                             <input class="search_text" type="text">
+                             <button class="search_btn" type="submit">найти</button>
+                          </div>
+
+                       </form>
+                       <svg class="social_icon search">
+                          <use xlink:href="#search"></use>
+                       </svg>
+                    </div><!-- /header_form -->
+                    <button class="change_theme" id="btn_theme">
+                       <svg class="social_icon" id="moon_active">
+                          <use xlink:href="#moon"></use>
+                       </svg>
+                    </button>
+                 </div><!-- /box_right -->
+                 <span class="menu-icon closed" id="menuBtn"></span>
+              </div><!-- /header_contact -->
+           </div><!-- /container -->
+        </section><!-- /contacts -->
+
+        <section class="navigation">
+           <div class="container">
+              <div class="blogg menu-container closed" id="menuContainer">
+              <div class="header_nav" >
+                 <div class="header_logo">
+                    <a href="index.html">UniLife</a>
+                    <div class="team">Международная команда UniLife</div>
+                 </div>
+                 <nav class="header_link " >
+                    <ul class="header_list">
+                       <li><a href="index.html" class="transition">Главная</a></li>
+                       <li><a href="courses.html" class="transition">Курсы</a></li>
+                       <li><a href="info.html" class="transition">Информация</a></li>
+                       <li><a href="blog.html" class="transition">Блог</a></li>
+                    </ul>
+                 </nav><!-- /header_link -->
+                 <!-- wow fadeInRightBig -->
+                 <a href="#modal1" class="open_modal header_btn"
+                 data-wow-delay="1s" data-wow-duration="2s" data-toggle="tooltip">Записаться</a>
+              </div><!-- /header_nav -->
+              </div>
+           </div><!-- /container -->
+        </section><!-- /navigation -->
+     </header><!-- /header -->
+
+     <!-- FIX footer -->
+     <div class="wrapper">
+
+     <!-- INTRO -->
+     <section class="error">
+        <div class="container">
+           <div class="error_inner">
+              <div class="success_title">
+                 <h1 class="wow fadeInDown" data-wow-duration="2s">Cпасибо</h1>
+                 <p class="">Данные успешно отправлены!</p>
+                 <a href="index.html">Вернуться на главную</a>
+              </div><!-- /intro_title -->
+              <div class="error_image">
+                 <!-- <img class=""src="img/castle.jpg" alt=""> -->
+              </div>
+           </div><!-- /intro_inner -->
+        </div><!-- /container -->
+     </section><!-- /intro -->
+
+
+     </div><!-- wrapper -->
+
+     <!-- FOOTER -->
+     <footer class="footer">
+        <div class="container">
+           <div class="footer_nav">
+              <div class="footer_logo">
+                 <a href="index.html">UniLife</a>
+                 <div class="footer_team">Международная команда UniLife</div>
+              </div>
+              <nav class="footer_link">
+                 <ul class="footer_list">
+                    <li><a href="index.html" class="transition">Главная</a></li>
+                    <li><a href="courses.html" class="transition">Курсы</a></li>
+                    <li><a href="info.html" class="transition">Информация</a></li>
+                    <li><a href="blog.html" class="transition">Блог</a></li>
+                 </ul>
+              </nav><!-- /footer_link -->
+              <div class="phone"><a href="tel:+380 99 774 7447">+380 99 774 7447</a></div>
+           </div><!-- /footer_nav -->
+        </div><!-- /container -->
+     </footer><!-- /footer -->
+
+     <!-- TOP BUTTON -->
+     <div class="text_box">
+         <a id="top_btn" href="#" class="button_top btn-animate">&uarr;</a>
+     </div>
+
+     <!-- MODAL -->
+     <div id="modal1" class="modal_div">
+        <span class="modal_close">&times;</span>
+        <!-- tabs -->
+        <div class="tabs-wrapper">
+      <div class="tabs">
+         <div class="tab tab_left">Почта</div>
+         <div class="tab tab_right">Телефон</div>
+      </div>
+      <div class="tabs-content">
+         <div class="tab-item">
+              <h3>Запись по почте</h3>
+              <!-- ФОРМА 1-->
+              <form id="formRegistration" action="mail.php" name="registration" method="POST">
+                <div class="box_registr">
+
+                   <input type="text" id="userName" name="userName" placeholder="Как к Вам обращаться?" >
+                   <div id="message4">
+                      <p id="nameTitle" class="invalid">Только буквы</b></p>
+                   </div>
+
+                  <input type="email" id="email" name="email" placeholder="Введите e-mail">
+                  <div id="message1">
+                     <p id="adress" class="invalid">Наличие точки, @, домена</b></p>
+                  </div>
+
+                  <div class="btn">
+                     <button type="submit" id="btnSubmit" class="signupbtn">Отправить</button>
+                  </div>
+                </div>
+              </form>
+           </div>
+         <div class="tab-item">
+              <h3>Запись по телефону</h3>
+              <!-- ФОРМА 2-->
+              <form id="formRegistration2" action="telegram.php" name="registration2" method="POST">
+                <div class="box_registr">
+
+                   <input type="text" id="userName2" name="userName2" placeholder="Как к Вам обращаться?">
+                   <div id="message5">
+                      <p id="nameTitle2" class="invalid">Только буквы</b></p>
+                   </div>
+
+                  <input type="tel" id="userPhone" name="phone" placeholder="Введите телефон">
+                  <div id="message6">
+                    <p id="phoneTitle" class="invalid">От 10 до 12 цифр (возможны скобки(), пробел, дефис)</p>
+                 </div>
+
+                  <div class="btn">
+                     <button type="submit" id="btnSubmit2" class="signupbtn">Отправить</button>
+                  </div>
+                </div>
+              </form>
+           </div>
+      </div>
+     </div>
+     </div>
+     <div id="overlay"></div>
+
+     <!-- SVG -->
+     <svg display="none">
+        <!-- telegram -->
+        <symbol id="telegram" viewBox="0 0 24 24">
+                 <g><path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z" /></g>
+        </symbol>
+        <!-- twitter -->
+        <symbol id="twitter" viewBox="0 0 512 512"><g><path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+               c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+               c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+               c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+               c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+               c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+               C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+               C480.224,136.96,497.728,118.496,512,97.248z"/></g>
+        </symbol>
+        <!-- youtube -->
+        <symbol id="youtube" viewBox="0 0 512 512"><g><path d="M490.24,113.92c-13.888-24.704-28.96-29.248-59.648-30.976C399.936,80.864,322.848,80,256.064,80
+                 c-66.912,0-144.032,0.864-174.656,2.912c-30.624,1.76-45.728,6.272-59.744,31.008C7.36,138.592,0,181.088,0,255.904
+                 C0,255.968,0,256,0,256c0,0.064,0,0.096,0,0.096v0.064c0,74.496,7.36,117.312,21.664,141.728
+                 c14.016,24.704,29.088,29.184,59.712,31.264C112.032,430.944,189.152,432,256.064,432c66.784,0,143.872-1.056,174.56-2.816
+                 c30.688-2.08,45.76-6.56,59.648-31.264C504.704,373.504,512,330.688,512,256.192c0,0,0-0.096,0-0.16c0,0,0-0.064,0-0.096
+                 C512,181.088,504.704,138.592,490.24,113.92z M192,352V160l160,96L192,352z"/></g>
+        </symbol>
+        <!-- vk -->
+        <symbol id="vk" viewBox="0 0 24 24"><g>
+                 <path d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z"/></g>
+        </symbol>
+        <!-- search -->
+        <symbol id="search" viewBox="0 0 56.966 56.966"><path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
+               s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+               c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+               s-17-7.626-17-17S14.61,6,23.984,6z"/>
+        </symbol>
+        <!-- btn-theme moon -->
+        <symbol id="moon" viewBox="-12 0 448 448.04455"><path d="m224.023438 448.03125c85.714843.902344 164.011718-48.488281 200.117187-126.230469-22.722656 9.914063-47.332031 14.769531-72.117187 14.230469-97.15625-.109375-175.890626-78.84375-176-176 .972656-65.71875 37.234374-125.832031 94.910156-157.351562-15.554688-1.980469-31.230469-2.867188-46.910156-2.648438-123.714844 0-224.0000005 100.289062-224.0000005 224 0 123.714844 100.2851565 224 224.0000005 224zm0 0"/>
+        </symbol>
+        <!-- btn-theme sun -->
+        <symbol id="sun" viewBox="0 0 45.16 45.16">
+           <path d="M22.58,11.269c-6.237,0-11.311,5.075-11.311,11.312s5.074,11.312,11.311,11.312c6.236,0,11.311-5.074,11.311-11.312
+            S28.816,11.269,22.58,11.269z"/>
+         <g>
+            <g>
+               <path d="M22.58,7.944c-1.219,0-2.207-0.988-2.207-2.206V2.207C20.373,0.988,21.361,0,22.58,0c1.219,0,2.207,0.988,2.207,2.207
+                  v3.531C24.787,6.956,23.798,7.944,22.58,7.944z"/>
+            </g>
+            <g>
+               <path d="M22.58,37.215c-1.219,0-2.207,0.988-2.207,2.207v3.53c0,1.22,0.988,2.208,2.207,2.208c1.219,0,2.207-0.988,2.207-2.208
+                  v-3.53C24.787,38.203,23.798,37.215,22.58,37.215z"/>
+            </g>
+            <g>
+               <path d="M32.928,12.231c-0.861-0.862-0.861-2.259,0-3.121l2.497-2.497c0.861-0.861,2.259-0.861,3.121,0
+                  c0.862,0.862,0.862,2.26,0,3.121l-2.497,2.497C35.188,13.093,33.791,13.093,32.928,12.231z"/>
+            </g>
+            <g>
+               <path d="M12.231,32.93c-0.862-0.863-2.259-0.863-3.121,0l-2.497,2.496c-0.861,0.861-0.862,2.26,0,3.121
+                  c0.862,0.861,2.26,0.861,3.121,0l2.497-2.498C13.093,35.188,13.093,33.79,12.231,32.93z"/>
+            </g>
+            <g>
+               <path d="M37.215,22.58c0-1.219,0.988-2.207,2.207-2.207h3.531c1.219,0,2.207,0.988,2.207,2.207c0,1.219-0.988,2.206-2.207,2.206
+                  h-3.531C38.203,24.786,37.215,23.799,37.215,22.58z"/>
+            </g>
+            <g>
+               <path d="M7.944,22.58c0-1.219-0.988-2.207-2.207-2.207h-3.53C0.988,20.373,0,21.361,0,22.58c0,1.219,0.988,2.206,2.207,2.206
+                  h3.531C6.956,24.786,7.944,23.799,7.944,22.58z"/>
+            </g>
+            <g>
+               <path d="M32.928,32.93c0.862-0.861,2.26-0.861,3.121,0l2.497,2.497c0.862,0.86,0.862,2.259,0,3.12s-2.259,0.861-3.121,0
+                  l-2.497-2.497C32.066,35.188,32.066,33.791,32.928,32.93z"/>
+            </g>
+            <g>
+               <path d="M12.231,12.231c0.862-0.862,0.862-2.259,0-3.121L9.734,6.614c-0.862-0.862-2.259-0.862-3.121,0
+                  c-0.862,0.861-0.862,2.259,0,3.12l2.497,2.497C9.972,13.094,11.369,13.094,12.231,12.231z"/>
+            </g>
+        </symbol>
+        <!-- search -->
+        <symbol id="arrow" viewBox="0 0 490.667 490.667"><path style="fill:#2196F3;" d="M245.333,0C109.839,0,0,109.839,0,245.333s109.839,245.333,245.333,245.333
+         s245.333-109.839,245.333-245.333C490.514,109.903,380.764,0.153,245.333,0z"/>
+        <path style="fill:#FAFAFA;" d="M267.968,82.219c-12.496-12.492-32.752-12.492-45.248,0L104.533,200.533
+         c-18.889,18.894-18.889,49.522,0,68.416c19.139,18.289,49.277,18.289,68.416,0l19.2-19.2v123.584
+         c0,29.455,23.878,53.333,53.333,53.333c29.455,0,53.333-23.878,53.333-53.333V249.749l19.2,19.2
+         c19.139,18.289,49.277,18.289,68.416,0c18.889-18.894,18.889-49.522,0-68.416L267.968,82.219z"/>
+        </symbol>
+     </svg>
+
+     <!-- Подключение скриптов -->
+     <script src="js/script.js"></script>
+     <script src="js/theme.js"></script>
+     <script src="js/modal.js"></script>
+     <script src="js/forms.js"></script>
+     <script src="js/tabs.js"></script>
+     <script src="js/tooltip.js"></script>
+     <script src="js/accordeon.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script type="text/javascript">
+        new WOW().init();
+     </script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+article {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+input[type=tel] {
+    color: #ffc107;
+}
+.questions_qourses img{
+   width: 70%;
+   display: block;
+   margin: 15px auto;
+}
+@media (max-width: 575.98px) {
+   .questions_qourses img{
+      width: 100%;
+   }
+   article {
+      width: 90%;
+   }
+}

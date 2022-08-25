@@ -1,0 +1,46 @@
+/*========= DARK THEME =========*/
+.dark-theme-bg {
+  background-color: #37474F;
+  color: #fff;
+}
+.dark-theme {
+  background-color: #455A64;
+  color: #fff;
+}
+.dark-theme .contacts {
+  background-color: #37474f;
+}
+.dark-theme .header_list a {
+  color: #ffffff;
+}
+.dark-theme .professional,
+.dark-theme .courses {
+   background-image: none;
+   background-color: #546E7A;
+}
+.dark-theme .student_box,
+.dark-theme .courses_box, {
+   background-color: rgba(120,144,156 ,1);
+}
+.dark-theme .result {
+   background-image: none;
+   background-color: #546E7A;
+}
+.dark-theme .nuances_box,
+.dark-theme .result_box,
+.dark-theme .stages_box,
+.dark-theme .student_box,
+.dark-theme .courses_box,
+.dark-theme .accordeon{
+   background-color: rgba(120,144,156 ,1);
+}
+.dark-theme .consultation_form {
+   background-color: #546E7A;
+}
+.dark-theme .consultation_form input{
+   color: #fff;
+   background-color: #455A64;
+}
+.dark-theme .stages {
+   background-color: #546E7A;
+}
